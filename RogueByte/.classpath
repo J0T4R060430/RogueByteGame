@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-10">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="main"/>
+	<classpathentry kind="src" path="menuSprites"/>
+	<classpathentry kind="src" path="enemySprite"/>
+	<classpathentry kind="src" path="weaponSprite"/>
+	<classpathentry kind="src" path="bulletSprites"/>
+	<classpathentry kind="src" path="universes"/>
+	<classpathentry kind="src" path="sprites"/>
+	<classpathentry kind="src" path="animations"/>
+	<classpathentry kind="src" path="backgrounds"/>
+	<classpathentry exported="true" kind="src" path="/AnimationShell"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
