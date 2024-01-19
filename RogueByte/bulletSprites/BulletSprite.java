@@ -24,7 +24,7 @@ public class BulletSprite implements DisplayableSprite, MovableSprite {
         this.deltaY = Math.cos(angleInDegrees) * speed;
 
         try {
-            this.image = ImageIO.read(new File("C:\\Users\\yihed\\Downloads\\RogueByteGame\\RogueByteGame\\RogueByte\\" + imageURL));
+            this.image = ImageIO.read(new File(imageURL));
             this.image = ImageRotator.rotate(this.image, tiltangle);
             this.height = this.image.getHeight(null) * size;
             this.width = this.image.getWidth(null) * size;

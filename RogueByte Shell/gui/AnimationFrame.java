@@ -268,7 +268,7 @@ public class AnimationFrame extends JFrame {
 
         }
 
-        System.out.println("animation complete");
+//        System.out.println("animation complete");
         System.out.println("THANK YOU FOR PLAYING OUR GAME!!!!!");
         AudioPlayer.setStopAll(true);
         dispose();
@@ -398,7 +398,7 @@ public class AnimationFrame extends JFrame {
     }
 
     protected void this_windowClosing(WindowEvent e) {
-        System.out.println("windowClosing()");
+//        System.out.println("windowClosing()");
         stop = true;
         dispose();
     }

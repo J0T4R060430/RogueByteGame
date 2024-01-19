@@ -24,7 +24,7 @@ public class EnemyBulletSprite implements DisplayableSprite, MovableSprite {
         this.deltaY = Math.sin(Math.toRadians(angleInDegrees)) * speed;
 
         try {
-            this.image = ImageIO.read(new File("C:\\Users\\yihed\\Downloads\\RogueByteGame\\RogueByteGame\\RogueByte\\" + imageURL));
+            this.image = ImageIO.read(new File(imageURL));
             this.image = ImageRotator.rotate(this.image, tiltangle);
             this.height = this.image.getHeight(null) * 4;
             this.width = this.image.getWidth(null) * 4;
