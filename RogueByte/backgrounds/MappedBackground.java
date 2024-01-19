@@ -68,11 +68,12 @@ public class MappedBackground implements Background {
             {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
             {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1}
     };
-
+    //    private String prefix = "C:\\Users\\___\\Downloads\\RogueByteGame\\RogueByteGame\\RogueByte\\";
+    private String prefix = "";
     public MappedBackground() {
         try {
-            this.wall = ImageIO.read(new File("C:\\Users\\yihed\\Downloads\\RogueByteGame\\RogueByteGame\\RogueByte\\res/Map/level1Wall.png"));
-            this.floor = ImageIO.read(new File("C:\\Users\\yihed\\Downloads\\RogueByteGame\\RogueByteGame\\RogueByte\\res/Map/level1Floor.png"));
+            this.wall = ImageIO.read(new File(this.prefix + "res/Map/level1Wall.png"));
+            this.floor = ImageIO.read(new File(this.prefix + "res/Map/level1Floor.png"));
         } catch (IOException e) {
             //System.out.println(e.toString());
         }

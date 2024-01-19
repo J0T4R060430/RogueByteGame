@@ -33,7 +33,8 @@ public class ByteSprite implements DisplayableSprite, MovableSprite {
     private int health = 0;
     private double healthPos = -850;
 
-    private String prefix = "C:\\Users\\yihed\\Downloads\\RogueByteGame\\RogueByteGame\\RogueByte\\";
+//    private String prefix = "C:\\Users\\yihed\\Downloads\\RogueByteGame\\RogueByteGame\\RogueByte\\";
+    private String prefix = "";
 
     private int dashCDRest = 0;
 

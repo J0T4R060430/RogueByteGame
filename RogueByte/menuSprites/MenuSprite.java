@@ -13,11 +13,12 @@ public class MenuSprite implements DisplayableSprite {
     private boolean dispose = false;
     private boolean visible = true;
     private int Xoff = 0, Yoff = 0;
-
+    //    private String prefix = "C:\\Users\\____\\Downloads\\RogueByteGame\\RogueByteGame\\RogueByte\\";
+    private String prefix = "";
 
     public MenuSprite(String imageURL, int Xoffset, int Yoffset, int multiplier) {
         try {
-            this.image = ImageIO.read(new File("C:\\Users\\yihed\\Downloads\\RogueByteGame\\RogueByteGame\\RogueByte\\" + imageURL));
+            this.image = ImageIO.read(new File(this.prefix+ imageURL));
             this.height = this.image.getHeight(null) * multiplier;
             this.width = this.image.getWidth(null) * multiplier;
         } catch (IOException e) {

@@ -18,7 +18,8 @@ public class StationaryEnemySprite implements DisplayableSprite {
     private double distanceToByte;
     private int health = 0;
     private int fireTimer = rand.nextInt(1000) + 500;
-
+    //    private String prefix = "C:\\Users\\____\\Downloads\\RogueByteGame\\RogueByteGame\\RogueByte\\";
+    private String prefix = "";
 
     public StationaryEnemySprite() {
         this.updateHealth(50);
@@ -29,8 +30,8 @@ public class StationaryEnemySprite implements DisplayableSprite {
         this.centerX += 1600;
         this.centerY += 1300;
         try {
-            this.standingLeft = ImageIO.read(new File("C:\\Users\\yihed\\Downloads\\RogueByteGame\\RogueByteGame\\RogueByte\\res/StationaryEnemy/Left.png"));
-            this.standingRight = ImageIO.read(new File("C:\\Users\\yihed\\Downloads\\RogueByteGame\\RogueByteGame\\RogueByte\\res/StationaryEnemy/Right.png"));
+            this.standingLeft = ImageIO.read(new File(this.prefix+"res/StationaryEnemy/Left.png"));
+            this.standingRight = ImageIO.read(new File(this.prefix+"res/StationaryEnemy/Right.png"));
         } catch (IOException e) {
         }
         this.height = this.standingLeft.getHeight(null) * 3;

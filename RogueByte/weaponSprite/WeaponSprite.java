@@ -22,7 +22,8 @@ public class WeaponSprite implements DisplayableSprite, MovableSprite {
     private int reload = 0;
     private String weapon;
     private int multiplier = 3;
-
+    //    private String prefix = "C:\\Users\\yihed\\Downloads\\RogueByteGame\\RogueByteGame\\RogueByte\\";
+    private String prefix = "";
 
     public WeaponSprite(String weapon) {
         this.weapon = weapon;
@@ -44,8 +45,8 @@ public class WeaponSprite implements DisplayableSprite, MovableSprite {
 
 
         try {
-            this.image = ImageIO.read(new File("C:\\Users\\yihed\\Downloads\\RogueByteGame\\RogueByteGame\\RogueByte\\res/Weapons/" + weapon + ".png"));
-            this.imageR = ImageIO.read(new File("C:\\Users\\yihed\\Downloads\\RogueByteGame\\RogueByteGame\\RogueByte\\res/Weapons/" + weapon + "R.png"));
+            this.image = ImageIO.read(new File(this.prefix + "res/Weapons/"+ weapon + ".png"));
+            this.imageR = ImageIO.read(new File(this.prefix + "res/Weapons/" + weapon + "R.png"));
             this.height = this.image.getHeight(null) * this.multiplier;
             this.width = this.height;
         } catch (IOException e) {
